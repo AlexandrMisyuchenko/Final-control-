@@ -1,7 +1,9 @@
 ﻿using System.Linq.Expressions;
 
 Console.Write("Введите элементы массива через пробел: ");
+#pragma warning disable CS8602 // Разыменование вероятной пустой ссылки.
 string[] arr = Console.ReadLine(). Split();
+#pragma warning restore CS8602 // Разыменование вероятной пустой ссылки.
 string[] newArr = new string [arr.Length];
 
 int index = 0;
