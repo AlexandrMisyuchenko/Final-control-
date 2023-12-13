@@ -16,3 +16,19 @@ string[] arr = Console.ReadLine().Split();
 ```
 string[] newArr = new string[arr.Length]; 
 ```
+### 4. Задаем индекс для нового массива
+```
+int index = 0;
+```
+### 5. Перепираем все элементы исходного массива
+```
+foreach (string element in arr)
+```
+### 6. Если длина элемента меньше или равна 3 символам, то добавляем его в новый массив и увеличиваем индекс на 1
+```
+if (element.Length <= 3)
+{
+    newArr[index] = element;
+    index++;
+}
+```
