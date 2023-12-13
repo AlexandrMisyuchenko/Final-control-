@@ -5,11 +5,16 @@ string[] arr = Console.ReadLine(). Split();
 string[] newArr = new string [arr.Length];
 
 int index = 0;
-foreach(string element int arr)
+foreach(string element in arr)
 {
-    if(ElementInit.Equals Length <= 3)
+    if(element.Length <= 3)
     {
         newArr[index] = element;
         index++;
     }
+}
+Console.WriteLine("Новый массив из строк, длина которых меньше или равна 3 символам: ");
+for (int i = 0; i < index; i++)
+{
+    Console.Write(newArr[i] + " ");
 }
